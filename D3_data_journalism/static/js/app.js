@@ -34,22 +34,12 @@ let chosenYAxis = "healthcare";
 
   // Parse Data/Cast as numbers
   healthData.forEach(function(data) {
-    data.state = +data.state;
-    data.poverty = +data.poverty;
-    data.povertyMoe = +data.povertyMoe;
-    data.age = +data.age;
-    data.ageMoe = +data.ageMoe;
-    data.income = +data.income;
-    data.incomeMoe = +data.incomeMoe;
+    data.poverty    = +data.poverty;
     data.healthcare = +data.healthcare;
-    data.healthcareLow = +data.healthcareLow;
-    data.healthcareHigh = +data.healthcareHigh;
-    data.obesity = +data.obesity;
-    data.obesityLow = +data.obesityLow;
-    data.obesityHigh = +data.obesityHigh;
-    data.smokes = +data.smokes;
-    data.smokesLow = +data.smokesLow;
-    data.smokesHigh = +data.smokesHigh;
+    data.age        = +data.age;
+    data.smokes     = +data.smokes;
+    data.obesity    = +data.obesity;
+    data.income     = +data.income;
   });
 
   // Initialize scale functions
