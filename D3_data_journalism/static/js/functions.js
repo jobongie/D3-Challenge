@@ -135,13 +135,6 @@ function updateToolTip(circlesGroup, chosenXAxis, chosenYAxis) {
   // mouseover event
   circlesGroup.on("mouseover", function(data) {
       toolTip.show(data, this);
-      // trying to highlight chosen circle
-      // circlesGroup.append("circle")
-      //   .attr("cx", d3.event.pageX)
-      //   .attr("cy", d3.event.pageY)
-      //   .attr("r", 15)
-      //   .attr("stroke", "black")
-      //   .attr("fill", "none");
   })
     // onmouseout event
     .on("mouseout", function(data) {

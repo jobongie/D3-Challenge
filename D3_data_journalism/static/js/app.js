@@ -30,7 +30,7 @@ let chosenYAxis = "healthcare";
 (async function(){
 
   // Import Data
-  const Data = await d3.csv("static/data/data.csv");
+  const healthData = await d3.csv("static/data/data.csv");
 
   // Parse Data/Cast as numbers
   healthData.forEach(function(data) {
